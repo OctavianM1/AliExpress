@@ -2,6 +2,12 @@ import Head from 'next/head';
 import Test from '../components/Test';
 
 export default function Home() {
+  fetch('settings', {
+    method: 'GET',
+  })
+    .then((r) => r.json())
+    .then((r) => console.log(r));
+
   return (
     <div>
       <Head>
