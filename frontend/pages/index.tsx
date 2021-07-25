@@ -1,7 +1,6 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import styles from '../styles/Home.module.css';
-import Test from './Test';
+import Test from '../components/Test';
 
 export default function Home() {
   return (
