@@ -46,6 +46,7 @@ jobs:
       run: |
         echo '{ script: "serve", env: { PM2_SERVE_SPA: "true", PM2_SERVE_HOMEPAGE: "/index.html" } }' >> build/process.json
     - name: 'Deploy to Azure WebApp'
+      working-directory: frontend
       uses: azure/webapps-deploy@v2
       with:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
