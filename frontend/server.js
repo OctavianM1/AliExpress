@@ -1,4 +1,4 @@
-const { createServer } = require("http");
+const { createServer } = require("http2");
 const next = require("next");
 
 const port = process.env.PORT || 3000;
